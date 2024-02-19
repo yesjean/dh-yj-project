@@ -1,0 +1,13 @@
+/* styles/globals.module.css */
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+.button {
+  margin-bottom: 20px;
+  width: 600px;
+  height: 30px;
+}
+  

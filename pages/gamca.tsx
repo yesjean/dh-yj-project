@@ -4,7 +4,7 @@ export default function Yejin2() {
     return (
         <>
             <div className={styles.main}>
-                <h1 style={{color: "red"}}>hi</h1>
+                <h1 style={{color: "red"}}>갬카 가자</h1>
             </div>
         </>
     )
