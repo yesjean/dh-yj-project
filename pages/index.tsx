@@ -3,6 +3,9 @@ import axios from 'axios';
 import styles from '../styles/globals.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
+import Header from './components/header';
+import NewsLetter from './components/newletter';
+import Blog from './components/blog';
 
 export default function Index() {
   const [categorys, setCategorys] = useState<string[]>([]);
@@ -27,7 +30,10 @@ export default function Index() {
 
   return (
     <>
-      <div className={styles.container}>
+    <Header/>
+    <Blog/>
+    <NewsLetter/>
+      {/* <div className={styles.container}>
         <h1>오늘 우리 머햄?</h1>
         <ul>
           {categorys.map((category, index) => (
@@ -58,7 +64,7 @@ export default function Index() {
         : null
         }
       </div>
-      </div>
+      </div> */}
     </>
   );
 }
