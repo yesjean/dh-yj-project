@@ -1,0 +1,18 @@
+{
+  "name": "dbstudy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "open": "^10.1.0",
+    "sqlite3": "^5.1.7"
+  }
+}
