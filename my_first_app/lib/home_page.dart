@@ -21,7 +21,13 @@ class HomePage extends StatelessWidget {
             ],
           ),
           body: Center(
-            child: Text('Welcome to Home Page'),
+             child: ElevatedButton(
+              onPressed: () {
+                // 웹뷰 페이지로 이동합니다.
+                GoRouter.of(context).go('/web');
+              },
+              child: Text('Open WebView'),
+            ),
           ),
         );
       },

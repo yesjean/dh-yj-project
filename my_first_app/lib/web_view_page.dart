@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 import 'package:webview_flutter_wkwebview/webview_flutter_wkwebview.dart';
+import 'package:go_router/go_router.dart';
 
 
 class WebViewExample extends StatefulWidget {
@@ -34,7 +35,16 @@ class _WebViewExampleState extends State<WebViewExample> {
  @override
 Widget build(BuildContext context) {
   return Scaffold(
-    appBar: AppBar(title: const Text('Flutter Simple Example')),
+    appBar: AppBar(
+        title: const Text('Flutter Simple Example'),
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back),
+          onPressed: () {
+            // GoRouter를 사용하여 홈으로 이동합니다.
+            GoRouter.of(context).go('/');
+          },
+        ),
+      ),
     body: WebViewWidget(controller: _controller),
   );
 }
