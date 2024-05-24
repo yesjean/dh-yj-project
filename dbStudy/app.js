@@ -3,10 +3,11 @@ const sqlite3 = require('sqlite3').verbose();
 const path = require('path');
 const session = require('express-session');
 const bcrypt = require('bcrypt');
+const cors = require('cors');
 
 const app = express();
 const port = 1113;
-
+app.use(cors()); // CORS 설정 추가
 // SQLite 데이터베이스 연결
 const db = new sqlite3.Database('database.db');
 
