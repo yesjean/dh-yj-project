@@ -17,6 +17,27 @@ samples, guidance on mobile development, and a full API reference.
 
 # 셋팅하기
 
+1. flutter 설치
+https://docs.flutter.dev/get-started/install
+
+2. my_first_app 안에 압축해제한 파일 넣기
+
+3. `flutter doctor`로 설치 확인 및, 설치해야될거 추가 설치
+    - flutter doctor 명령어는 필요한 도구와 구성 요소가 설치되었는지 확인하고, 부족한 부분을 알려줌
+    - Xcode를 설치하고, Xcode Command Line Tools도 설치해야함 App Store에서 Xcode를 설치한 후, 터미널에서 다음   명령을 실행하여 Command Line Tools를 설치 `xcode-select --install`
+
+4. ios에세 테스트 할려면 cocopad 필요
+- 설치 `sudo gem install cocoapods`
+
+5. `flutter pub get` 한번 해주고... 플러그인 설치
+
+6. xcode 시뮬레이터 실행
+
+7. `flutter run` 으로 실행
+
+8. 시뮬레이터에서 확인
+
+
 ### flutter
 
 flutter SDK 설치  
